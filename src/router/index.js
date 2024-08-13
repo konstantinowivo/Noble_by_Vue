@@ -1,18 +1,18 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
-import About from '../views/About.vue';
+import Contacto from '../views/Contacto.vue';
 
 // Definición de las rutas
 const routes = [
 {
-    path: '/',
-    name: 'Home',
-    component: Home
+  path: '/',
+  name: 'Home',
+  component: Home
 },
 {
-    path: '/about',
-    name: 'About',
-    component: About
+  path: '/contacto',
+  name: 'Contacto',
+  component: Contacto
 }
 ];
 

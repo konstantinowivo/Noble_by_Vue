@@ -1,20 +1,19 @@
 <template>
-    <div id="home_view">
-    <HomeCarousel msg="Welcome to Your Vue.js App"/>
-    <HomeMain/>
-    </div>
+    <section class="main-section">
+        <Carousel_home />
+        <Nav_main/>
+    </section>
 </template>
 
 <script>
-  // @ is an alias to /src
-import HomeCarousel from '@/components/HomeCarousel.vue';
-import HomeMain from '@/components/HomeMain.vue';
+import Carousel_home from '@/components/Header/Carousel_home.vue';
+import Nav_main from '@/components/Main/Nav_main.vue';
 
 export default {
-    name: 'home_view',
+    name: 'Home_section',
     components: {
-    HomeCarousel,
-    HomeMain
-}
-}
+        Carousel_home,
+        Nav_main
+    },
+    };
 </script>

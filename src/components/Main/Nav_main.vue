@@ -1,26 +1,23 @@
 <template>
-<section class="main-section">
-    <header class="main-header">
-    <h1>{{ title }}</h1>
-    <p>{{ description }}</p>
-    </header>
-    <nav class="main-nav">
-    <button @click="navigateTo('home')" :class="{ active: currentPage === 'home' }">Inicio</button>
-    <button @click="navigateTo('about')" :class="{ active: currentPage === 'about' }">Acerca de</button>
-    <button @click="navigateTo('contact')" :class="{ active: currentPage === 'contact' }">Contacto</button>
-    </nav>
-    <div class="content">
-    <component :is="currentComponent" />
-    </div>
-</section>
+    <section>
+        <nav class="main-nav">
+            <button @click="navigateTo('home')" :class="{ active: currentPage === 'home' }">Inicio</button>
+            <button @click="navigateTo('about')" :class="{ active: currentPage === 'about' }">Acerca de</button>
+            <button @click="navigateTo('contact')" :class="{ active: currentPage === 'contact' }">Contacto</button>
+        </nav>
+        <div class="content">
+            <component :is="currentComponent" />
+        </div>
+    </section>
 </template>
 
 <script>
-export default {
-name: 'MainSection',
+
+export default{
+    
 data() {
     return {
-    title: 'Bienvenido a la Sección Principal',
+    title: 'Matafuegos Noble',
     description: 'Esta es una breve descripción de la sección principal de nuestra aplicación.',
     currentPage: 'home', // Página por defecto
     };
