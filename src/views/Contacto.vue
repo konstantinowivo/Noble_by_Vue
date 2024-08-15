@@ -1,11 +1,17 @@
 <template>
     <div class="contacto_view">
-    <h1>This is an about page</h1>
+        <Banner_contacto/>
     </div>
 </template>
 
 <script>
+import Banner_contacto from '@/components/Contacto/Banner_contacto.vue';
+
 export default {
-    name: 'contacto_view'
+    name: 'contacto_view',
+
+    components:{
+        Banner_contacto
+    }
 }
 </script>
