@@ -1,17 +1,20 @@
 <template>
     <div class="contacto_view">
-        <Banner_contacto/>
+        <Banner/>
+        <Form_contacto/>
     </div>
 </template>
 
 <script>
-import Banner_contacto from '@/components/Contacto/Banner_contacto.vue';
+import Banner from '@/components/Banner.vue';
+import Form_contacto from '@/components/Contacto/Form_contacto.vue';
 
 export default {
     name: 'contacto_view',
 
     components:{
-        Banner_contacto
+        Banner,
+        Form_contacto
     }
 }
 </script>
