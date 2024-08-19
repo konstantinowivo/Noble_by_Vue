@@ -29,7 +29,7 @@ export default {
 
 .half_and_half {
     display: flex;
-    height: 100vh;
+    height: 60vh;
 }
 
 .image-container {
